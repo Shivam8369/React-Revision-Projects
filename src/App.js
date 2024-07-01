@@ -18,6 +18,7 @@ import DragableUsingUseReducer from "./components/DragableUsingUseReducer";
 import { LanguageProvider } from "./Context/LanguageContext";
 import Translator from "./components/Translator";
 import ImageGallery from "./components/ImageGallery";
+import Accordian from "./components/Accordian";
 
 const App = (props) => {
   return (
@@ -47,7 +48,9 @@ const App = (props) => {
           <Translator/>
       </LanguageProvider> */}
 
-      <ImageGallery/>
+      {/* <ImageGallery/> */}
+
+      <Accordian/>
       
     </div>
   );

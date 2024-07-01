@@ -1,129 +1,123 @@
 1. What is the significance of React Fragments?
 
+    React Fragments are used to group multiple elements together without adding an extra DOM node. They are useful when you need to return multiple elements from a component, but don't want to wrap them in an unnecessary div element.
+
 2. What are React Hooks?
+
+    React Hooks are a way to use state and other React features in functional components. They provide a way to "hook into" React state and lifecycle methods from functional components.
 
 3. Explain the useEffect Hook.
 
+    The useEffect hook is used to handle side effects in functional components, such as making API calls or setting timers. It takes a function as an argument, which is called after the component has rendered.
+
 4. What is the purpose of the useState Hook?
+
+    The useState hook is used to add state to functional components. It takes an initial value as an argument and returns an array with the current state value and a function to update it.
 
 5. What is the significance of keys in React lists?
 
+    Keys are used to identify elements in a list and help React keep track of changes to the list. They should be unique and stable, and are used to optimize rendering and improve performance.
+
 6. What is the Context API in React?
+
+    The Context API is a way to share data between components without passing props down manually. It provides a way to create a global state that can be accessed by any component in the application.
 
 7. How does React handle prop drilling, and what’s the solution?
 
+    Prop drilling is the process of passing props down from a parent component to a child component, often through multiple levels of nesting. The solution is to use the Context API or a state management library like Redux.
+
+
 8. What is Redux, and why might you use it with React?
+
+    Redux is a state management library that helps manage global state by providing a single source of truth for the application's state. It's often used with React to manage complex state and side effects.
 
 9. What is the significance of PureComponent in React?
 
+    PureComponent is a class component that implements the shouldComponentUpdate method, which checks if the component's props or state have changed before re-rendering. This can improve performance by reducing unnecessary re-renders. {deprecated}
+
 10. Explain React Router.
+
+    React Router is a popular library for client-side routing in React applications. It provides a way to navigate between pages and manage the application's URL.
 
 11. What is the significance of the memo function in React?
 
+    The memo function is used to memoize a component, which means caching its output to improve performance. It's often used to optimize functional components that don't rely on props or state.
+
 12. What is the purpose of the useReducer Hook?
+
+    The useReducer hook is used to manage state with a reducer function, similar to Redux. It's often used to manage complex state and side effects in functional components.
 
 13. Explain the concept of higher-order components (HOCs) in React.
 
+    HOCs are functions that take a component as an argument and return a new component with additional props or behavior. They're often used to share functionality between components.
+
 14. What is the role of the key attribute in React?
+    refer question 5
 
 15. How does React handle forms?
+    React handles forms by providing a way to manage form state and handle form submissions. It's often used with controlled components, which are form elements that have their value controlled by the component's state.
 
-16. What is Redux Thunk, and why might you use it?
 
-17. What is the purpose of the componentWillUnmount lifecycle method in class components?
+16. Explain the concept of server-side rendering (SSR) in React.
 
-18. What is the significance of the forwardRef function in React?
+17. What is the purpose of the React.StrictMode component?
 
-19. What are React Hooks rules?
+18. How does React handle routing?
 
-20. Explain the concept of server-side rendering (SSR) in React.
+19. Explain the concept of controlled components in React.
 
-21. What is the purpose of the React.StrictMode component?
+20. Explain the concept of code-splitting in React.
 
-22. How does React handle routing?
+21. How does React handle events?
 
-23. What is the significance of the dangerouslySetInnerHTML attribute in React?
+22. What is the purpose of the useMemo Hook in React?
 
-24. Explain the concept of controlled components in React.
+23. Explain the concept of portals in React.
 
-25. What is the purpose of the useContext Hook in React?
+24. What is the purpose of the React.Fragment element?
 
-26. What is the significance of the shouldComponentUpdate method in React?
+25. Explain the concept of Redux middleware.
 
-27. Explain the concept of code-splitting in React.
+26. What is the significance of the useLayoutEffect Hook in React?
 
-28. How does React handle events?
+27. How does React handle errors in components?
 
-29. What is the purpose of the useMemo Hook in React?
+28. Explain the concept of the key prop in React lists.
 
-30. Explain the concept of portals in React.
+29. What is the purpose of the useCallback Hook in React?
 
-31. What is the purpose of the React.Fragment element?
+30. How does React handle conditional rendering?
 
-32. Explain the concept of Redux middleware.
+31. What is the role of the displayName property in React?
 
-33. What is the significance of the useLayoutEffect Hook in React?
+32. Explain the concept of lazy loading in React.
 
-34. How does React handle errors in components?
+33. What is the significance of the useEffect cleanup function?
 
-35. Explain the concept of the key prop in React lists.
+34. How does React handle state in class components compared to functional components?
 
-36. What is the purpose of the useCallback Hook in React?
+35. What is the role of the React.memo function in functional components?
 
-37. How does React handle conditional rendering?
+36. Explain the purpose of the useEffect dependency array.
 
-38. What is the role of the displayName property in React?
+37. How does React handle forms in controlled components?
 
-39. Explain the concept of hooks rules in React.
+38. Explain the concept of hooks in React.
 
-40. What is the significance of the useImperativeHandle Hook?
+39. What is the significance of the useEffect Hook in React?
 
-41. What is the purpose of the contextType property in class components?
+40. Explain the concept of the useMemo Hook in React.
 
-42. Explain the concept of lazy loading in React.
+41. Explain the concept of the useReducer Hook in React.
 
-43. What is the significance of the useEffect cleanup function?
+42. What is the role of the useCallback Hook in React?
 
-44. How does React handle state in class components compared to functional components?
+43. How does React handle component lifecycle methods in functional components?
 
-45. What is the role of the React.memo function in functional components?
+44. What is the purpose of the useRef Hook in React?
 
-46. Explain the purpose of the useEffect dependency array.
+45. Explain the concept of controlled and uncontrolled components in React.
 
-47. What is the significance of the useRef Hook in React?
+46. How does React handle prop drilling, and what are potential solutions?
 
-48. How does React handle forms in controlled components?
-
-49. What is the purpose of the React.PureComponent class in React?
-
-50. Explain the concept of hooks in React.
-
-66. What is the significance of the useEffect Hook in React?
-
-67. Explain the concept of the useMemo Hook in React.
-
-68. What is the purpose of the React.Fragment component in React?
-
-69. Explain the concept of the useReducer Hook in React.
-
-70. What is the role of the useCallback Hook in React?
-
-71. How does React handle component lifecycle methods in functional components?
-
-72. What is the purpose of the useRef Hook in React?
-
-73. Explain the concept of controlled and uncontrolled components in React.
-
-74. What is the significance of the useContext Hook in React?
-
-75. How does React handle prop drilling, and what are potential solutions?
-
-76. What is the role of the useLayoutEffect Hook in React?
-
-77. Explain the concept of the dangerouslySetInnerHTML attribute in React.
-
-78. What is the purpose of the React.StrictMode component in React?
-
-79. How does React handle error boundaries, and what is their purpose?
-
-80. What is the role of the useDebugValue Hook in React?
+47. What is the role of the useDebugValue Hook in React?
