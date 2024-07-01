@@ -1,0 +1,29 @@
+/* ImageGallery.css */
+.image-gallery {
+    text-align: center;
+  }
+  
+  .image-gallery img {
+    width: 500px;
+    height: 300px; 
+    object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+    margin: 20px 0;
+    border: 1px solid #ccc; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .image-gallery button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .image-gallery button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
