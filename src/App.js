@@ -19,6 +19,7 @@ import { LanguageProvider } from "./Context/LanguageContext";
 import Translator from "./components/Translator";
 import ImageGallery from "./components/ImageGallery";
 import Accordian from "./components/Accordian";
+import StarRating from "./components/StarRating";
 
 const App = (props) => {
   return (
@@ -50,7 +51,9 @@ const App = (props) => {
 
       {/* <ImageGallery/> */}
 
-      <Accordian/>
+      {/* <Accordian/> */}
+
+      <StarRating noOfStar={10}/>
       
     </div>
   );

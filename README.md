@@ -38,5 +38,13 @@ Here is a list of the projects included in this repository:
 * Todo List
 * Weather App
 * Counter App
+* Pagination
+* Routing
+* ImageGallery slider
+* Draggable Component
+* Login page
+* Toggle component
+* StarRating system
+* Translator
 * And more...
 

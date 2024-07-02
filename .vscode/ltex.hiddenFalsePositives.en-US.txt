@@ -1,0 +1,1 @@
+{"rule":"TO_DO_HYPHEN","sentence":"^\\QTodo List\nWeather App\nCounter App\nPagination\nRouting\nImageGallery slider\nDraggable Component\nLogin page\nToggle component\nStarRating system\nTranslator\nAnd more...\\E$"}
