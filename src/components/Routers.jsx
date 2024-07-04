@@ -59,6 +59,30 @@ const Routers = () => {
     //     },
     // ]);
 
+
+    // another approach 
+    
+    // const routesArray = [
+    //   { path: '/', element: <TodoList /> },
+    //   { path: '/counter', element: <Counter /> },
+    //   { path: '/toggle', element: <Toggle /> },
+    //   { path: '/Input', element: <Input /> },
+    //   { path: '/Input/:ID', element: <Toggle /> }
+    // ];
+    
+    // const Routers = () => {
+    //   const appRoute = createBrowserRouter([
+    //     {
+    //       path: '/',
+    //       element: <NavRoutes />,
+    //       errorElement: <Error />,
+    //       children: routesArray.map(route => ({
+    //         path: route.path,
+    //         element: route.element
+    //       }))
+    //     }
+    //   ]);
+
   return (
     <div>
         <RouterProvider router = {appRoute}/>

@@ -46,5 +46,6 @@ Here is a list of the projects included in this repository:
 * Toggle component
 * StarRating system
 * Translator
+* LoadMoreData
 * And more...
 

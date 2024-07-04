@@ -20,6 +20,7 @@ import Translator from "./components/Translator";
 import ImageGallery from "./components/ImageGallery";
 import Accordian from "./components/Accordian";
 import StarRating from "./components/StarRating";
+import LoadMoreData from "./components/LoadMoreData";
 
 const App = (props) => {
   return (
@@ -53,7 +54,8 @@ const App = (props) => {
 
       {/* <Accordian/> */}
 
-      <StarRating noOfStar={10}/>
+      {/* <StarRating noOfStar={10}/> */}
+      <LoadMoreData/>
       
     </div>
   );
