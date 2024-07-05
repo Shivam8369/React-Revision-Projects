@@ -27,6 +27,7 @@ const LoadMoreData = () => {
     productImage: {
       width: '200px',
       height: '200px',
+      cursor: 'pointer'
     },
     buttonContainer: {
       display: 'flex',
@@ -74,7 +75,7 @@ const LoadMoreData = () => {
   }, [count]);
 
   useEffect(() => {
-    if (product.length === 50) {
+    if (product.length === 100) {
       setDisabled(true);
     }
   }, [product]);
@@ -99,7 +100,7 @@ const LoadMoreData = () => {
           >
             Load More Data
           </button>
-          {disabled ? <p>You have reached the maximum data</p> : null}
+          {disabled ? <p>You have reached the maximum Product</p> : null}
         </div>
       </div>
     </div>

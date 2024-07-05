@@ -21,6 +21,8 @@ import ImageGallery from "./components/ImageGallery";
 import Accordian from "./components/Accordian";
 import StarRating from "./components/StarRating";
 import LoadMoreData from "./components/LoadMoreData";
+import menus from './Utilities/MenuData.jsx'
+import MenuTree from "./components/MenuBar/MenuTree";
 
 const App = (props) => {
   return (
@@ -55,7 +57,10 @@ const App = (props) => {
       {/* <Accordian/> */}
 
       {/* <StarRating noOfStar={10}/> */}
-      <LoadMoreData/>
+      {/* <LoadMoreData/> */}
+      <MenuTree menu = {menus}/>
+
+
       
     </div>
   );
