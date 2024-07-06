@@ -23,6 +23,7 @@ import StarRating from "./components/StarRating";
 import LoadMoreData from "./components/LoadMoreData";
 import menus from './Utilities/MenuData.jsx'
 import MenuTree from "./components/MenuBar/MenuTree";
+import Scroll from "./components/Scroll_Indicator.jsx";
 
 const App = (props) => {
   return (
@@ -58,9 +59,8 @@ const App = (props) => {
 
       {/* <StarRating noOfStar={10}/> */}
       {/* <LoadMoreData/> */}
-      <MenuTree menu = {menus}/>
-
-
+      {/* <MenuTree menu = {menus}/> */}
+      <Scroll url= {"https://dummyjson.com/products?limit=100"}/>
       
     </div>
   );
