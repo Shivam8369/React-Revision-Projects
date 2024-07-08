@@ -48,5 +48,6 @@ Here is a list of the projects included in this repository:
 * Translator
 * Load-More-Data component 
 * Scroll-Bar-component
+* Added Modal
 * And more...
 
