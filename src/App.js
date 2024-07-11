@@ -25,6 +25,7 @@ import menus from './Utilities/MenuData.jsx'
 import MenuTree from "./components/MenuBar/MenuTree";
 import Scroll from "./components/Scroll_Indicator.jsx";
 import ModalTest from "./components/Custom-Modal/ModalTest.jsx";
+import TicTacToe from "./components/TicTacToe.jsx";
 
 const App = (props) => {
   return (
@@ -63,7 +64,8 @@ const App = (props) => {
       {/* <MenuTree menu = {menus}/> */}
       {/* <Scroll url= {"https://dummyjson.com/products?limit=100"}/> */}
 
-      <ModalTest/>
+      {/* <ModalTest/> */}
+      <TicTacToe/>
       
     </div>
   );

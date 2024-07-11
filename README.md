@@ -49,5 +49,6 @@ Here is a list of the projects included in this repository:
 * Load-More-Data component 
 * Scroll-Bar-component
 * Added Modal
+* Added tic-Tac-toe game
 * And more...
 
