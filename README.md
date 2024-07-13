@@ -50,5 +50,6 @@ Here is a list of the projects included in this repository:
 * Scroll-Bar-component
 * Added Modal
 * Added tic-Tac-toe game
+* Added OnMouseOut functionality 
 * And more...
 

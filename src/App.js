@@ -26,6 +26,7 @@ import MenuTree from "./components/MenuBar/MenuTree";
 import Scroll from "./components/Scroll_Indicator.jsx";
 import ModalTest from "./components/Custom-Modal/ModalTest.jsx";
 import TicTacToe from "./components/TicTacToe.jsx";
+import OnMouseOut from "./components/OnMouseOut.jsx";
 
 const App = (props) => {
   return (
@@ -65,7 +66,8 @@ const App = (props) => {
       {/* <Scroll url= {"https://dummyjson.com/products?limit=100"}/> */}
 
       {/* <ModalTest/> */}
-      <TicTacToe/>
+      {/* <TicTacToe/> */}
+      <OnMouseOut/>
       
     </div>
   );
