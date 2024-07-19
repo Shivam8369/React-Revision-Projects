@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { autocompleteData } from "../Utilities/AutoSearchData";
-import '../CSS/search.css'
+import styles from '../CSS/search.module.css'
 
 const Search = () => {
   const [search, setSearch] = useState("");
@@ -17,7 +17,7 @@ const Search = () => {
     autocompleteData.filter((result) => result.toLowerCase().includes(search.toLowerCase())) : [];
 
   return (
-    <div className="container">
+    <div className="styles.container" style={{textAlign: 'center'}}>
       <input
         type="text"
         name="search"
@@ -32,7 +32,7 @@ const Search = () => {
         )
         :
         (
-            <ul>
+            <ul className="styles.list">
             {filterData.length > 0 ?
                     filterData.map((item, index) => <li key={index} onClick={() => handleSuggestionClick(item)}>{item}</li>)  : 
                     <p>No results found</p>

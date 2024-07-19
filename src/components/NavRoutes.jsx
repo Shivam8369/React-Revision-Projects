@@ -1,33 +1,26 @@
-import React from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import React from "react";
+import { NavLink, Outlet } from "react-router-dom";
+import { routesArray } from "../Utilities/Routes";
 
 const NavRoutes = () => {
   return (
     <div>
-
       <nav>
-        <ul style={{display: 'flex'}}>
-          <li>
-            <NavLink to="/" end activeClassName="active">Todo List</NavLink>
-          </li>
-           
-           {/* Not a good practice to use a tag becoz it reloads the page  */}
-          <li>
-            <a href="/Input" >Input</a>
-          </li>
-
-          <li>
-            <NavLink to="/counter" activeClassName="active">Counter</NavLink>
-          </li>
-          <li>
-            <NavLink to="/toggle" activeClassName="active">Toggle</NavLink>
-          </li>
+        <ul style={{ display: "flex", flexWrap: 'wrap' }}>
+          {routesArray.map((route) => (
+            <li key={route.path}>
+              <NavLink to={route.path} end activeClassName="active">
+                {route.path === "/"
+                  ? "Todo List"
+                  : route.path.substring(1).charAt(0).toUpperCase() +
+                    route.path.slice(2)}
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </nav>
 
-      {/* child will render from the router */}
       <Outlet />
-
     </div>
   );
 };

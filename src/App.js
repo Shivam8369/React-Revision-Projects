@@ -1,7 +1,7 @@
 import "./App.css";
 import { ThemeProvider } from "./Context/ThemeContext";
 import Fetching from "./components/Fetching";
-import Timer from "./Timer";
+import Timer from "./components/Timer.jsx";
 import Counter from "./components/Counter";
 import FIleAccepter from "./components/FIleAccepter";
 import Input from "./components/Input";
@@ -37,7 +37,7 @@ const App = (props) => {
       {/* <Fetching/> */}
       {/* <Timer/> */}
       {/* <TodoList/> */}
-      {/* <Routers/> */}
+      <Routers/>
       {/* <FIleAccepter/> */}
       {/* <Weather/> */}
       {/* <Search/> */}
@@ -67,7 +67,7 @@ const App = (props) => {
 
       {/* <ModalTest/> */}
       {/* <TicTacToe/> */}
-      <OnMouseOut/>
+      {/* <OnMouseOut/> */}
       
     </div>
   );
